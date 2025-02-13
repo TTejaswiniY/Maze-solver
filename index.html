@@ -1,0 +1,22 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <input type="file" id="fileInput" accept=".txt">
+        <button onclick="loadMazeFromFile()">Upload Maze</button>
+        <textarea id="mazeInput" rows="10" cols="30" placeholder="Enter maze (0 for path, 1 for wall, comma-separated)"></textarea>
+        <button onclick="generateMazeFromInput()">Generate Maze</button>
+        <div id="maze"></div>
+        <button onclick="startTimer(); solveMaze();">Solve Maze</button>
+        <div id="timer">Time: 0s</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
